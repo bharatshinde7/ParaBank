@@ -39,25 +39,23 @@ public class HomePage extends base {
 
 		LandingPage landingPage = new LandingPage(driver);
 
-		/*
-		 * log.info("Start the registration for user....."); RegisterPage registerPage =
-		 * new RegisterPage(driver);
-		 * registerPage.getFirstName().sendKeys(prop.getProperty("firstName"));
-		 * registerPage.getLastName().sendKeys(prop.getProperty("lastName"));
-		 * registerPage.getAddress().sendKeys(prop.getProperty("address"));
-		 * registerPage.getCity().sendKeys(prop.getProperty("city"));
-		 * registerPage.getState().sendKeys(prop.getProperty("state"));
-		 * registerPage.getZipCode().sendKeys(prop.getProperty("zipCode"));
-		 * registerPage.getPhoneNumber().sendKeys(prop.getProperty("phoneNumber"));
-		 * registerPage.getSSN().sendKeys(prop.getProperty("ssn"));
-		 * registerPage.getUserName().sendKeys(prop.getProperty("userName"));
-		 * registerPage.getPassword().sendKeys(prop.getProperty("password"));
-		 * registerPage.getConfirmPassword().sendKeys(prop.getProperty("confirmpassword"
-		 * )); registerPage.getRegisterButton().click();
-		 * log.info("User registration is completed.....");
-		 * 
-		 * landingPage.getlogOut().click();
-		 */
+		log.info("Start the registration for user.....");
+		RegisterPage registerPage = new RegisterPage(driver);
+		registerPage.getFirstName().sendKeys(prop.getProperty("firstName"));
+		registerPage.getLastName().sendKeys(prop.getProperty("lastName"));
+		registerPage.getAddress().sendKeys(prop.getProperty("address"));
+		registerPage.getCity().sendKeys(prop.getProperty("city"));
+		registerPage.getState().sendKeys(prop.getProperty("state"));
+		registerPage.getZipCode().sendKeys(prop.getProperty("zipCode"));
+		registerPage.getPhoneNumber().sendKeys(prop.getProperty("phoneNumber"));
+		registerPage.getSSN().sendKeys(prop.getProperty("ssn"));
+		registerPage.getUserName().sendKeys(prop.getProperty("userName"));
+		registerPage.getPassword().sendKeys(prop.getProperty("password"));
+		registerPage.getConfirmPassword().sendKeys(prop.getProperty("confirmpassword"));
+		registerPage.getRegisterButton().click();
+		log.info("User registration is completed.....");
+
+		landingPage.getlogOut().click();
 
 		log.info("User login process start.....");
 		login.getUserName().sendKeys(prop.getProperty("userName"));
