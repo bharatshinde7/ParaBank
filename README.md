@@ -23,6 +23,6 @@ Extent Report
 
 ## Installation
 A little intro about the installation.
-$ git clone https://github.com/bharatshinde7/
+$ git clone https://github.com/bharatshinde7/ParaBank.git
 $ import the maven project in eclipse/STS/IDE tool
 $ testng.xml -> right click -> Run As -> TestNG test
